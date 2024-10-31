@@ -108,7 +108,7 @@ def calculate_integral_2():
 
         result = simpsons_rule(f2, lower_bound, upper_bound, num_intervals)
         results_text.delete(1.0, tk.END)
-        results_text.insert(tk.END, f"2nd Integral Result:\nSimpson's Rule: {result:.5f}\n\n")
+        results_text.insert(tk.END, f"2nd Integral Result:\nSimpson's Rule: {result:.4f}\n\n")
         plot_function(f2, lower_bound, upper_bound, "f2(x) = log10(x + 2) / x")
     except ValueError:
         results_text.delete(1.0, tk.END)
@@ -124,7 +124,7 @@ def calculate_integral_3():
 
         result = trapezoidal_rule(f3, lower_bound, upper_bound, num_intervals)
         results_text.delete(1.0, tk.END)
-        results_text.insert(tk.END, f"3rd Integral Result:\nTrapezoidal Rule: {result:.5f}\n\n")
+        results_text.insert(tk.END, f"3rd Integral Result:\nTrapezoidal Rule: {result:.4f}\n\n")
         plot_function(f3, lower_bound, upper_bound, "f3(x) = 1 / sqrt(x^2 + 2.3)")
     except ValueError:
         results_text.delete(1.0, tk.END)
