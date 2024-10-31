@@ -84,9 +84,9 @@ def calculate_integral_1():
         results_text.delete(1.0, tk.END)
         results_text.insert(tk.END,
                             f"1st Integral Results:\n"
-                            f"Midpoint Method: {result_middle:.5f}\n"
-                            f"Left Method: {result_left:.5f}\n"
-                            f"Right Method: {result_right:.5f}\n\n"
+                            f"Midpoint Method: {result_middle:.4f}\n"
+                            f"Left Method: {result_left:.4f}\n"
+                            f"Right Method: {result_right:.4f}\n\n"
                             )
         plot_function(f1, lower_bound, upper_bound, "f1(x) = 1 / sqrt(2 * x^2 + 1)")
     except ValueError:
